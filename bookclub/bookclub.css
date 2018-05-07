@@ -1,0 +1,510 @@
+
+body {
+	min-height: 100vh;  /* need this line to 
+					tell body to fill viewport */
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+     }
+
+header {
+    text-align: center;
+    display: flex;
+    color: #FF595F;
+    font-style: light;
+    padding-bottom: 60px;
+    justify-content: center;
+    padding: 30px;
+    box-shadow: 0px 0px 27px #a6a6a6;
+    z-index: 3;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -15px;
+}
+
+
+h1 {
+   font-size: 30pt;
+   font-weight: 800;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+h2{
+    font-size: 20pt;
+    font-weight: 400;
+    text-align: left;
+}
+
+h3{
+    font-size: 20pt;
+    font-weight: 400;
+    text-align: left;
+}
+
+h4{
+	font-family: 'Roboto', sans-serif;
+    font-size: 20pt;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+
+main h4 {
+    font-size: 12pt;
+    padding-bottom: 5px;
+}
+
+main h5 {
+    font-size: 12pt;
+    padding-bottom: 10px;
+}
+
+h5{
+    font-size: 20pt;
+    padding-bottom: 25px;
+}
+
+main h6 {
+    font-size: 10pt;
+}
+
+h6{
+    font-size: 10pt;
+}
+
+#contentText{
+    padding-left: 20px;
+    max-width: 60%;
+    flex: 1 1 40%;
+    overflow: auto;
+}
+
+.contentText {
+    max-width: 60%;
+    flex: 1 1 40%;
+    overflow: auto;
+}
+
+
+main {
+    flex: 1 0 auto;  /* the sticky footer trick without the footer */
+    padding: 0px;
+    height: auto;
+    background-color: #EDEDED;
+	display: flex;
+}
+
+#bookDisplay{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputInfo{
+    color: #FF595F;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+#input {
+    padding: none;
+    margin-top: 40px;
+    display: none;
+}
+
+.inputOr{
+    color: #FF595F;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+input {
+	border-style: solid;
+	border-radius: 10px;
+    border-color: #FF595F;
+	font-size: 20pt;
+    width: 100%;
+    padding: 12px 20px;
+    margin: none;
+    box-sizing: border-box;
+}
+
+input::placeholder{
+    color: #EDEDED;
+}
+
+button {
+    width: 100%;
+    font-size: xx-large;
+    color: white;
+    background-color: #FF595F;
+    border-radius: 10px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin-top: 15%;
+    border: none;
+}
+
+.arrow{
+    width: auto;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    border: solid;
+    height: 40px;
+    width: 60px;
+    padding: 1px 1px;
+    position: fixed;
+    bottom: 10%;
+    margin: 0px;
+    z-index: 10;
+}
+
+.exit{
+    width: auto;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    border: solid;
+    border-radius: 40px;
+    margin-top: none;
+    padding: 0px 7px;
+    position: fixed;
+    left: unset;
+    right: 20px;
+    top: 20px;
+    margin: 0px;
+}
+
+.remove {
+    width: auto;
+    color: black;
+    background-color: transparent;
+    border-color: black;
+    border: solid;
+    border-radius: 40px;
+    margin-top: 0px;
+    padding: 0px 10px;
+    font-size: x-large;
+}
+
+.removeBox {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.left {
+    left: 20px;
+}
+
+.right{
+    left: unset;
+    right: 20px;
+}
+
+#keep {
+    color: white;
+    height: 45px;
+    width: 110px;
+    padding: 1px 1px;
+    position: fixed;
+    top: unset;
+    bottom: 10%;
+    margin-left: -55px;
+    z-index: 10;
+    left: 50%;
+    text-align: center;
+    font-size: x-large;
+}
+
+p {
+	font-size: medium;
+	margin: 10px;
+}
+
+/*
+#FF595F
+#EDEDED
+white
+*/
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 4; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+br{
+    display: block;
+}
+
+#contentBox{
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    height: 350px;
+    width: 65%;
+    display: none;
+}
+
+img{
+    object-fit: contain;
+    flex: 0 1 auto;
+    min-height: 100%;
+    max-width: 60%;
+}
+
+.savedBookPic > img{
+    flex: 0 1 auto;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+.errorMessage{
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    color: white;
+}
+
+.bookBox{
+    flex-grow: 0;
+    height: 210px;
+    display: flex;
+    background-color: white;
+    padding: 5px;
+    margin: 20px;
+    margin-bottom: 0px;
+    box-shadow: 5px 5px 20px #a6a6a6;
+    
+}
+
+.savedBookPic{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+    flex: 1 1 auto;  
+    align-items: flex-start;
+}
+
+#searchIcon{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+#messageOk{
+    position: fixed;
+    bottom: 10%;
+    left: 45%;
+}
+
+#hourglassButton {
+    color: white;
+    background-color: transparent;
+    margin-top: none;
+    padding: 0px;
+}
+
+#hourglass{
+    width: 50px;
+
+}
+
+@media only screen and (max-width: 599px) {
+    #input{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    main h4{
+        font-size: 15pt;
+    } 
+    main h5{
+        font-size: 15pt;
+    }
+    main h6{
+        font-size: 10pt;
+    }
+    .arrow{
+        bottom: 50%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .info{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    header{
+        text-align: left;
+    }
+    
+    h1{
+        font-size: 35pt;
+        margin-right: 30px;
+        flex: 1 1 auto;
+    }
+    
+    h2{
+        font-size: 30pt;
+    }
+    
+    h3{
+        font-size: 25pt;
+    }
+    
+    #input {
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        flex: 1 1 100%;
+    }
+    
+    .info{
+        flex-direction: column;
+        margin-right: 10px;
+    }
+    
+    .buttonBox{
+        text-align: center;
+        flex: 0 1 auto;
+        padding: 0;
+        margin: 0;
+    }
+    
+    button {
+        width: auto;
+        font-size: xx-large;
+        margin-top: 32px;
+    }
+    
+    .inputInfo{
+        flex: 1 1 100%;
+    }
+
+    .inputOr{
+        display: none;
+        flex: 1 1 auto;
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #searchIcon{
+/*        display: none;*/
+    }
+    
+    #contentBox{
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        width: auto;
+        max-height: 34%;
+        max-width: 60%;
+        display: none;
+    }
+    
+    .bookBox{
+        flex: 1 0 50%;
+        width: 45%;
+        max-width: 39%;
+        height: 250px;
+        display: flex;
+        background-color: white;
+        margin: 20px;
+        box-shadow: 5px 5px 20px #a6a6a6;
+
+    }
+     
+    #bookDisplay{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+    .bookBox{
+        flex: 1 0 45%;
+        width: 45%;
+        max-width: 40%;
+        height: 210px;
+        display: flex;
+        background-color: white;
+        margin: 20px;
+        box-shadow: 5px 5px 20px #a6a6a6;
+
+    }
+     
+    #bookDisplay{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .bookBox{
+        flex: 1 0 48%;
+        width: 50%;
+        max-width: 42%;
+        height: 210px;
+        display: flex;
+        background-color: white;
+        margin: 20px;
+        box-shadow: 5px 5px 20px #a6a6a6;
+
+    }
+     
+    #bookDisplay{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 1220px) {
+    .bookBox{
+        flex: 1 0 28%;
+        width: 30%;
+        max-width: 25%;
+        height: 250px;
+        display: flex;
+        background-color: white;
+        margin: 20px;
+        box-shadow: 5px 5px 20px #a6a6a6;
+
+    }
+     
+    #bookDisplay{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .bookBox {
+        max-width: 27%;
+    }
+}

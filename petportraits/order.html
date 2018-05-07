@@ -1,0 +1,171 @@
+<!doctype HTML>
+
+<HTML>
+
+<HEAD>
+
+	<TITLE>RJoy Pet Portraits</TITLE>  <!-- Title appears in tab of Web page -->
+  	<meta charset="utf-8" /> <!-- Character set; this is the HTML5 default -->
+	<meta name="viewport" content="width=device-width">
+  	<!-- meta is a self-closing tag; it just has parameters, no content.  -->
+  	<link rel="stylesheet" type="text/css" href="style/reset.css">
+
+  	<link rel="stylesheet" type="text/css" href="style/general.css">
+
+  	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Great+Vibes|Kaushan+Script|Noticia+Text|Playfair+Display:700" rel="stylesheet"> 
+
+  	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald:300" rel="stylesheet">
+
+</HEAD>
+
+<body>
+
+	<header>
+
+		<div id="top">
+			<div id="topCenter">
+				<div class="box">
+					<img id="dog" src="icons/dog.png" alt="~" width=100%>
+				</div>
+				<div id="title">
+					<h1 class="title">RJoy Pet</h1>
+					<h1 class="title">Portraits </h1>
+				</div>
+				<div class="box">
+					<img id="cat" src="icons/cat.png" alt="~" width=100%>
+				</div>
+			</div>
+		</div>
+
+		<div id="links">
+			<a href="index.html">GALLERY</a>
+			<h3 class="pipe">|</h3>
+            <a href="about.html">ABOUT</a>
+			<h3 class="pipe">|</h3>
+            <a href="order.html" class="active">ORDER</a>
+		</div>
+
+	</header>
+
+	<main>
+		
+        <!--<form action="/my-handling-form-page" method="post" id="form">-->
+        <form method="post" id="form">
+
+            <div class="formCol">
+            
+              <div>
+                <label for="name">Name:</label>
+                  <span class="required">*</span>
+                <input type="text" id="name" name="user_name" required>
+              </div>
+
+              <div>
+                <label for="mail">E-mail:</label>
+                  <span class="required">*</span>
+                <input type="email" id="mail" name="user_mail" required>
+              </div>
+
+            <div>
+                <label for="payment">Payment method:</label>
+                  <span class="required">*</span>
+                <select name="payment">
+                  <option value="cash">Cash</option>
+                  <option value="venmo">Venmo</option>
+                  <option value="check">Check</option>
+                  <option value="creditCard">Credit card (+4%)</option>
+                </select>
+            </div>
+
+
+                <div>
+                <label for="dateReason">If you need the pet portrait by a specific date/event, please specify:</label>
+                <input type="text" id="dateReason" name="dateReason">
+                </div>
+
+                <div>
+                <label for="date">Date of event:</label>
+                <input type="date" name="date">
+                </div>
+                
+            </div>
+            
+            <div class="formCol" id="col2">
+            
+                <div>
+                    <label for="favColor1">Click to select three colors that appeal to you:</label><br>
+                    <input type="color" name="favcolor1" value="#ffffff">
+                    <input type="color" name="favcolor2" value="#ffffff">
+                    <input type="color" name="favcolor3" value="#ffffff">
+                </div>
+
+                <div>    
+                <label for="medium">Medium:</label>
+                  <span class="required">*</span>
+                <select name="medium">
+                  <option value="coloredPencil">Colored pencil</option>
+                  <option value="oil">Oil</option>
+                  <option value="charcoal">Charcoal</option>
+                  <option value="pen">Pen</option>
+                </select>
+                </div>
+
+
+                <div>
+                <label for="numPets">Number of pets in the picture</label>
+                  <span class="required">*</span>
+                <select name="numPets">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3 (+25%)</option>
+                  <option value="4">4 (+50%)</option>
+                    <option value="5more">5 or more (+75%)</option>
+                </select>
+
+                </div>
+
+                <div>
+                <label for="background">Background:</label>
+                <span class="required">*</span>
+                <select class="background"> <!--finish this using node.js-->
+                  <option data-img-src="http://placekitten.com/220/200" value="none">None</option>
+                  <option data-img-src="http://placekitten.com/180/200" value="color">Color gradient</option>
+                  <option data-img-src="http://placekitten.com/130/200" value="landscape">Landscape/scene</option>
+                </select>
+                </div>
+
+                <div>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message" rows="3"></textarea>
+                </div>
+
+                <div id="fileUploads">
+                    <label for="img">Please upload as many photos as you can of your pets:</label> 
+                    <span><br>1.)</span>
+                    <input type="file" name="img1">
+                </div>
+                    <button id="addPhoto" onclick="addPhoto()">Add another photo</button>
+
+                <div>
+                <input type="submit">
+                </div>
+            </div>
+            
+        </form>
+	</main>
+
+	<footer>
+		<div id="icons">
+			<img id="email" src="icons/email.png" alt="rjoypetportraits@gmail.com" width=100%>
+			<img id="phone" src="icons/phone.png" alt="(530)616-1088" width=100%>
+			<img id="facebook" src="icons/facebook.png" alt="facebook.com" width=100%>
+			<img id="instagram" src="icons/insta.png" alt="instagram" width=100%>
+			<img id="mail" src="icons/mail.png" alt="mailing address" width=100%>
+		</div> 
+	</footer>
+    
+    <script src="script/form.js"> </script>
+
+</body>
+
+</HTML>

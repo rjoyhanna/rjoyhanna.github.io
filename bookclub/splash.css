@@ -1,0 +1,283 @@
+
+body {
+	/*min-height: 100vh;  /* need this line to 
+					tell body to fill viewport */
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+    padding: 25px;
+     }
+
+header {
+    text-align: center;
+    color: #FF595F;
+    font-style: light;
+    padding-bottom: 60px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -15px;
+}
+
+
+h1 {
+   font-size: 30pt;
+   font-weight: 800;
+}
+
+h2{
+    font-size: 20pt;
+    font-weight: 400;
+    text-align: left;
+}
+
+h3{
+    font-size: 20pt;
+    font-weight: 400;
+    text-align: left;
+}
+
+h4{
+	font-family: 'Roboto', sans-serif;
+    font-size: 20pt;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+
+h5{
+    font-size: 20pt;
+    padding-bottom: 25px;
+}
+
+h6{
+    font-size: 10pt;
+}
+
+#contentText{
+    padding-left: 20px;
+    max-width: 40%;
+    overflow: scroll;
+}
+
+
+main {
+     flex: 1 0 auto;  /* the sticky footer trick without the footer */
+    padding-left: 0px;
+    height: auto;
+}
+
+.inputInfo{
+    color: #FF595F;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+#input {
+    flex-direction: column;
+    display: flex;
+    padding: none;
+    margin-top: 40px;
+    
+}
+
+.inputOr{
+    color: #FF595F;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+input {
+	border-style: solid;
+	border-radius: 10px;
+    border-color: #FF595F;
+	font-size: 20pt;
+    width: 100%;
+    padding: 12px 20px;
+    margin: none;
+    box-sizing: border-box;
+}
+
+input::placeholder{
+    color: #EDEDED;
+}
+
+button {
+    width: 100%;
+    font-size: xx-large;
+    color: white;
+    background-color: #FF595F;
+    border-radius: 10px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin-top: 15%;
+    border: none;
+}
+
+.arrow{
+    width: auto;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    border: solid;
+    height: 40px;
+    width: 60px;
+    padding: 1px 1px;
+    position: fixed;
+    top: 50%;
+    z-index: 10;
+}
+
+.exit{
+    width: auto;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    border: solid;
+    border-radius: 40px;
+    margin-top: none;
+    padding: 0px 7px;
+    position: fixed;
+    left: unset;
+    right: 20px;
+    top: 20px;
+}
+
+.left {
+    left: 20px;
+}
+
+.right{
+    left: unset;
+    right: 20px;
+}
+
+p {
+	font-size: medium;
+	margin: 10px;
+}
+
+/*
+#FF595F
+#EDEDED
+white
+*/
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+br{
+    display: block;
+}
+
+#contentBox{
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    width: auto;
+    max-height: 34%;
+    max-width: 60%;
+    display: none;
+}
+
+.errorMessage{
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    color: white;
+}
+
+#hourglassButton{
+    display: none;
+}
+
+@media only screen and (min-width: 800px) {
+    
+    .info{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    header{
+        text-align: left;
+    }
+    
+    h1{
+        font-size: 35pt;
+    }
+    
+    h2{
+        font-size: 30pt;
+    }
+    
+    h3{
+        font-size: 25pt;
+    }
+    
+    main{
+        padding-left: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    
+    #input {
+        flex-direction: row;
+        display: flex;
+    }
+    
+    #messageOk{
+        height: 50px;
+    }
+    
+    .info{
+        flex-direction: column;
+    }
+    
+    .buttonBox{
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #search1{
+        margin-left: 120px;
+    }
+    
+    button {
+        width: auto;
+        font-size: xx-large;
+        margin-top: 30px;
+        position: relative;
+        left: -50px;
+    }
+    
+    .inputInfo{
+        flex: 1 1 100%;
+    }
+
+    .inputOr{
+        flex: 1 1 auto;
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

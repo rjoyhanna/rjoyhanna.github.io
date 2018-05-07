@@ -1,0 +1,72 @@
+<!doctype HTML>
+<html>
+<head>
+<title>Make a Book List</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="splash.css" id="splash">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+    
+<div id="overlay">
+    <button class="exit" onclick="off()">X</button>
+    <div id="contentBox">
+    </div>
+</div>
+
+<header>
+    <h1>BOOK CLUB</h1>
+    <div id="input">
+        <div class="info">
+             <h3 class="inputInfo">Author</h3>
+             <input id="author" placeholder="ex William Shakespeare">
+        </div>
+        
+        <h3 class="inputOr">or</h3>
+       
+        <div class="info">
+            <h3 class="inputInfo">Title</h3>
+            <input id="title" placeholder="ex Romeo and Juliet">
+        </div>
+        
+        <h3 class="inputOr">or</h3>
+
+        <div class="info">
+            <h3 class="inputInfo">ISBN</h3>
+            <input id="isbn" placeholder="ex 000-0-00-000000-0"> 
+        </div>
+            <div class="buttonBox"> 
+                <button id="search1" onclick="newRequest()">Search</button>
+            </div>
+    </div>
+    <div id="searchIcon">
+        <button onclick="searchScreen()" id="hourglassButton">
+            <img src="search.png" id="hourglass">
+        </button>
+    </div>
+    
+
+</header>
+
+
+<main>
+
+    <div id="bookDisplay">
+        
+        
+    </div>
+
+</main>
+
+<!-- The Javascript for this page -->
+<script src="bookclub.js"> </script>
+
+<!-- The JSONp request -->
+<script id="dummy"></script>  
+
+</body>
+</html>

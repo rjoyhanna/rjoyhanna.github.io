@@ -1,0 +1,343 @@
+html, body{
+	height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	background-color: #003388;
+    box-shadow: 0px 0px 20px #333333;
+    z-index: 10;
+    margin: 15px;
+}
+
+
+#top{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex: 0 0 100%;
+    padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#dog{
+	text-align: center;
+    max-width: 100%;
+}
+
+#topCenter{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex: 0 0 auto;
+}
+
+#title{
+	display: flex;
+	flex-direction: column;
+}
+
+.box{
+	flex: 0 0 auto;
+	max-width: 50px;
+	padding: 15px;
+}
+
+#cat{
+	text-align: center;
+    max-width: 100%;
+}
+
+.title{
+	flex: 1 1 100%;
+	text-align: center;
+}
+
+#links{
+	padding: 15px;
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px ridge #d6f5e6;
+	background-color: #;
+}
+
+main{
+	background-color: #d6f5e6;
+    flex: 1 0 auto;
+    margin: 15px;
+    padding: 15px;
+    border: ridge;
+    border-color: #96c5c6;
+}
+
+.required {
+    color: red;
+}
+
+#gallery{
+    flex: 1 0 auto;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0 0;
+}
+
+
+
+h1{
+	font-family: 'Playfair Display', serif;
+	font-size: 2.6em;
+	color: #d6f5e6;
+    white-space: nowrap;
+}
+
+#links a {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+	color: #d6f5e6;
+    text-align: center;
+    text-decoration: none;
+}
+
+#links a:hover {
+  color: white;
+    font-weight: bold;
+}
+
+#links a.active {
+    color: white;
+    font-weight: bold;
+}
+
+h3{
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+	color: #d6f5e6;
+}
+
+.pipe{
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 2.1em;
+}
+
+
+footer{
+	flex: 0 0 auto;
+	flex-direction: column;
+	display: flex;
+	background-color: #003388;
+	margin: 15px;
+    box-shadow: 0px 0px 20px #333333;
+}
+
+#icons{
+	flex: 0 0 100%;
+	flex-direction: row;
+	display: flex;
+	justify-content: center;
+    padding: 15px;
+}
+
+img{
+    max-width: 100%;
+}
+
+#icons img{
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.column img{
+    flex: 1 0 auto;
+    vertical-align: middle;
+    padding-bottom: 10px;
+    
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date], textarea {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=color] {
+    width: 32%;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #003388;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #2266aa;
+}
+
+#form div {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#form .formCol {
+    padding: 0px;
+}
+
+
+
+
+/*#a6a6d9
+#fff9e6
+font-family: 'Playfair Display', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Noticia Text', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+
+
+*/
+
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 600px) {
+    .column {
+        flex: 46%;
+        max-width: 48%;
+        padding: 0 5px;
+    }
+    #title {
+        flex-direction: row;
+    }
+    
+    .box {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .box {
+        display: none;
+    }
+    
+    #links a {
+        font-size: 1.5em;
+    }
+    
+    h3{
+        font-size: 1.5em;
+    }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (min-width: 800px) {
+    .column {
+        flex: 22%;
+        max-width: 23%;
+        padding: 0 5px;
+    }
+    
+    #title {
+        flex-direction: row;
+    }
+    
+    .box {
+        display: none;
+    }
+    
+    header {
+        align-items:flex-start
+    }
+    
+    #links {
+        position: absolute;
+        right: 17px;
+        top: 18px;
+	   border-top: none;
+    }
+    
+    #top {
+        padding-left: 15px;
+    }
+    
+    form {
+        display: flex;
+    }
+    
+    #form .formCol {
+        flex: 1 1 50%;
+        padding: 0 15px;
+    }
+    
+    #col2 {
+        border-left: 3px solid white;
+    }
+}
