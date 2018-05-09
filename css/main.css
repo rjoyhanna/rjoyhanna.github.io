@@ -2,7 +2,6 @@
     background-image: url(../images/IMG_20161126_133031804.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
 }
 
 /*this is a comment*/
@@ -73,12 +72,50 @@ h2 {
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    justify-content: space-between;
 }
 
 #websitesGallery img {
-    object-fit: contain;
-    flex: 0 1 20%;
-    margin: 20px;
+    object-fit: scale-down;
     box-sizing: border-box;
-    max-width: 100%;
+    padding: 10px;
 }
+
+#publishedArtwork {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+#publishedArtwork img {
+    width: 30%;
+    margin-bottom: 10px;
+    object-fit: scale-down;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: dimgrey;
+}
+
+#publishedArtwork .landscape {
+    width: 47%;
+}
+
+#projects {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#projects img {
+    width: 100%;
+    object-fit: scale-down;
+    box-sizing: border-box;
+    border: solid black;
+}
+
+
