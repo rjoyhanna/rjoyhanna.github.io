@@ -118,4 +118,20 @@ h2 {
     border: solid black;
 }
 
+#face {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+#face img {
+    width: 30%;
+    margin-top: 50px;
+    object-fit: scale-down;
+    box-sizing: border-box;
+}
+
 
