@@ -3,7 +3,8 @@ html{
 }
 
 #landingpage{
-    background-image: url(../images/IMG_20161126_133031804.jpg);
+    background-color: black;
+    background-image: url(../images/IMG_20161126_133031804.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0px;
@@ -20,6 +21,7 @@ img{
     font-size: 60pt;
     color: #ffffff;
     text-align: center;
+    margin-top: 0px;
 }
 
 p {
@@ -85,6 +87,8 @@ h2 {
     align-items: center;
     box-sizing: border-box;
     justify-content: space-between;
+    padding: 20px;
+    background-color: black;
 }
 
 #websitesGallery img {
@@ -108,6 +112,8 @@ h2 {
     align-items: center;
     box-sizing: border-box;
     justify-content: space-around;
+    padding: 20px;
+    background-color: black;
 }
 
 #publishedArtwork img {
@@ -129,6 +135,14 @@ h2 {
     align-items: center;
     box-sizing: border-box;
     justify-content: center;
+    padding: 20px;
+    background-color: black;
+}
+
+#text {
+    padding: 20px;
+    background-color: black;
+    margin-top: 100px;
 }
 
 #projects img {
