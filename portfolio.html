@@ -14,10 +14,12 @@
     <body id="landingpage">
         
         <div class="navbar">
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT</a>
-            <a href="portfolio.html" class="active">PORTFOLIO</a>
-            <a href="Rachel%20Hanna%20Resume.pdf" target="_blank">RESUME</a> <!--change resume to .pdf-->
+            <img src="images/exit.png" onclick="hideNav()" id="navExit">
+            <img src="images/navreveal.png" onclick="displayNav()" id="navImage">
+            <a href="index.html" id="index">HOME</a>
+            <a href="about.html" id="about">ABOUT</a>
+            <a href="portfolio.html" class="active" id="portfolio">PORTFOLIO</a>
+            <a href="CS%20resume.docx" target="_blank" id="resume">RESUME</a> <!--change resume to .pdf-->
         </div>
         
         <h2>Websites</h2>
@@ -48,6 +50,7 @@
                 <img src="projectPaper.JPG"></a>
         </div>
 
+        <script src="main.js"></script>
         
     </body>
     

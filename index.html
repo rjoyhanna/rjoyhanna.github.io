@@ -4,6 +4,7 @@
     <head>
         <!--This is a comment-->
         <title>My Website!</title>
+        <meta charset="utf-8">
         
         <link rel="stylesheet" type="text/css" href="css/main.css">
         
@@ -14,17 +15,22 @@
     <body id="landingpage">
         
         <div class="navbar">
-            <a href="index.html" class="active">HOME</a>
-            <a href="about.html">ABOUT</a>
-            <a href="portfolio.html">PORTFOLIO</a>
-            <a href="CS%20resume.docx" target="_blank">RESUME</a> <!--change resume to .pdf-->
+            <img src="images/exit.png" onclick="hideNav()" id="navExit">
+            <img src="images/navreveal.png" onclick="displayNav()" id="navImage">
+            <a href="index.html" class="active" id="index">HOME</a>
+            <a href="about.html" id="about">ABOUT</a>
+            <a href="portfolio.html" id="portfolio">PORTFOLIO</a>
+            <a href="CS%20resume.docx" target="_blank" id="resume">RESUME</a> <!--change resume to .pdf-->
         </div>
+        <div id="text">
         <h1 id="header">Rachel Hanna</h1>
         <p>Aspiring web developer...<br>
             Artist...<br>
             Software engineer...<br>
         </p>
+        </div>
 
+        <script src="main.js"></script>
         
     </body>
     

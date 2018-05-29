@@ -1,7 +1,12 @@
+html{
+    height: 100%;
+}
+
 #landingpage{
     background-image: url(../images/IMG_20161126_133031804.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0px;
 }
 
 /*this is a comment*/
@@ -39,10 +44,13 @@ h2 {
 }
 
 .navbar {
-    background: rgb(255,255,255,.8);
+    background-color: black;
     display: flex;
     align-items: center;
-    border: 3px solid white;
+}
+
+#navExit {
+    display: none;
 }
 
 .navbar a {
@@ -52,19 +60,23 @@ h2 {
     color: #89852e;
     font-size: 2em;
     flex: 1 0 auto;
+    display: none;
     text-align: center;
+}
+
+.navbar .active {
+    display: block;
+    flex: 1 0 auto;
 }
 
 .navbar a:hover {
     background: rgb(207,211,213,.5);
-    color: #804000;
-    font-weight: bold;
+    color: #ffffff;
 }
 
 .navbar a.active {
-    background: rgb(238,240,242,.8);
-    color: #804000;
-    font-weight: bold;
+    border-bottom: 3px solid white;
+    color: #ffffff;
 }
 
 #websitesGallery {
@@ -79,6 +91,14 @@ h2 {
     object-fit: scale-down;
     box-sizing: border-box;
     padding: 10px;
+}
+
+.navbar img {
+    object-fit: scale-down;
+    box-sizing: border-box;
+    height: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 #publishedArtwork {
@@ -134,4 +154,25 @@ h2 {
     box-sizing: border-box;
 }
 
+#navExit {
+    margin: 0px;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
 
+
+@media only screen and (min-width: 600px) {
+    #landingpage{
+	    background-image: url(../images/IMG_20161126_133035610.jpg);
+    }
+    
+    .navbar img {
+        display: none;
+    }
+    
+    .navbar a {
+        display: block;
+    }
+
+}
