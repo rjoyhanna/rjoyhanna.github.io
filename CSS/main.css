@@ -1,0 +1,368 @@
+html, body{
+	height: 100%;
+    background-color: #71abb3;
+}
+
+body {
+    background-color: white;
+    background-image: url(../Images/jonathan-knepper-402511-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-position: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+    margin: 0px;
+}
+
+#vis {
+    background-image: none;
+    background-color: #71abb3;
+    justify-content: center;
+}
+
+#netVis {
+    margin: 0px;
+}
+
+h1, p, a {
+/*    font-family: 'Noto Serif KR', sans-serif;*/
+    font-size: 25px;
+/*
+    
+    font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+*/
+font-family: 'Alegreya Sans', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Tangerine', cursive;
+    margin-top: 15px;
+/*    font-family: 'Miss Fajardose', cursive;*/
+/*font-family: 'Amatic SC', cursive;*/
+/*font-family: 'Sacramento', cursive;*/
+/*font-family: 'Allura', cursive;*/
+}
+
+#Title {
+    margin-top: 200px;
+}
+
+header {
+    flex-shrink: 0;
+}
+
+main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: #1d2a33;
+    margin: 5px;
+    margin-bottom: 0px;
+}
+
+.iconsBox2 img {
+    max-height: 40px;
+}
+
+.iconsBox img {
+    display: block;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.webBlock {
+    background-color: rgb(255, 255, 255, 90%);
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    box-shadow: 0px 0px 15px #71abb3;
+    margin: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    color: #1d2a33;
+}
+
+.projBlock, .projBlockCol {
+    background-color: rgb(255, 255, 255, 90%);
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    box-shadow: 0px 0px 15px #71abb3;
+    margin: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    color: #1d2a33;
+}
+
+.projBlockCol {
+    flex-direction: column;
+    align-items: center;
+}
+
+.projBlock a {
+    color: #71abb3;
+    text-decoration: underline;
+}
+
+.projBlock a:hover {
+    color: #1d2a33;
+}
+
+.projBlock:hover, .projBlockCol:hover {
+    background-color: rgb(255,255,255);
+    box-shadow: 0px 0px 15px black;
+}
+
+#stretch {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.webBlock:hover {
+    background-color: rgb(255,255,255);
+    box-shadow: 0px 0px 15px black;
+}
+
+.webinfo h2, .webinfo p{
+    font-size: 15px;
+    margin: 0px;
+}
+
+.webimg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+main a {
+    text-decoration: none;
+}
+
+#contactBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactBoxHover {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* NEWWWWWWWW */
+
+#openMenuIcon, #closeMenuIcon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 40px;
+}
+
+#navbar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+    flex: 0 1 auto;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+    transition: top .3s;
+    background-color: #71abb3;
+    top: -100%;
+    box-shadow: 0px 0px 15px black;
+}
+
+#closeMenuIcon {
+    display: none;
+    z-index: 101;
+}
+
+#navbar a {
+	color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    padding: 5px 0px;
+}
+
+#Email {
+    background: url("../Images/Icons/sprite.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-position: 0px -40px;
+}
+
+#Email:hover {
+    background-position: 0px 0px;
+}
+
+#Phone {
+    background: url("../Images/Icons/sprite.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-position: 0px -78px;
+}
+
+#Phone:hover {
+    background-position: 0px -120px;
+}
+
+#LinkedIn {
+    background: url("../Images/Icons/sprite.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-position: 0px -160px;
+}
+
+#LinkedIn:hover {
+    background-position: 0px -200px;
+}
+
+.noHoverIcons {
+    visibility: hidden;
+}
+
+#navbar a:hover, #navbar a.active {
+    font-weight: 700;
+    text-shadow: 1px 1px 5px black;
+}
+
+@media screen and (min-width: 600px) {
+    #frontTitle, #frontTitle2, #frontTitle3 {
+        max-width: 500px;
+    }
+    
+    #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+    }
+    
+    #contactus {
+        background-color: transparent;
+    }
+    
+    #contactus h1 {
+        color: #d3466c;
+
+    }
+    
+    #openMenuIcon {
+        display: none;
+    }
+    
+    #navbar2 {
+        display: flex;
+    }
+    
+    #navbar2 {
+        width: 100%;
+        z-index: 100;
+        flex: 0 1 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px;
+        margin-bottom: 40px;
+    }
+
+    #navbar2 a {
+        color: #d3466c;
+        text-decoration: none;
+        flex: 0 0 auto;
+        text-align: center;
+        font-family: 'Lora', serif;
+        font-weight: 400;
+        padding: 5px 20px;
+        border-bottom: solid #d3466c;
+    }
+    
+    #navbar2 a.active {
+        font-weight: 700;
+        border-bottom: solid #a52748;
+    }
+    
+    #navbar2 a:hover, #navbar2 a.active {
+        color: #a52748;
+
+    }
+    
+    #navbar2 a:hover{
+        border-bottom: solid white;
+    }
+    
+    
+    
+    #frontTitle2 {
+        display: block;
+        margin-right: 50px;
+    }
+    
+    #frontTitle {
+        display: none;
+    }
+    #board {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .boardCol {
+        flex: 1 0 30%;
+    }
+    
+    #imageback {
+    }
+    
+    /* RESIZE ALL FONTS FOR DESKTOP*/
+    
+    h2 {
+        font-size: 35px;
+    }
+    
+    #home h1{
+        font-size: 30px;
+    }
+    
+    #home p {
+        font-size: 20px;
+    }
+    
+    #contactus h1 {
+        font-size: 25px;
+    }
+    
+    #navbar a {
+        font-size: 25px;
+    }
+    
+    #navbar2 a {
+        font-size: 25px;
+    }
+}
