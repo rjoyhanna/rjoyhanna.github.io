@@ -252,61 +252,45 @@ main a {
     text-shadow: 1px 1px 5px black;
 }
 
-@media screen and (min-width: 600px) {
-    #frontTitle, #frontTitle2, #frontTitle3 {
-        max-width: 500px;
-    }
-    
-    #home {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 70%;
-    }
-    
-    #contactus {
-        background-color: transparent;
-    }
-    
-    #contactus h1 {
-        color: #d3466c;
+#navbarDesk {
+    display: none;
+}
 
+@media screen and (min-width: 600px) {
+    header {
+        top: 0px;
+        display: flex;
     }
     
     #openMenuIcon {
         display: none;
     }
     
-    #navbar2 {
-        display: flex;
-    }
-    
-    #navbar2 {
+    #navbarDesk {
         width: 100%;
-        z-index: 100;
         flex: 0 1 auto;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
         padding: 0px 0px;
-        margin-bottom: 40px;
-    }
-
-    #navbar2 a {
-        color: #d3466c;
-        text-decoration: none;
-        flex: 0 0 auto;
-        text-align: center;
-        font-family: 'Lora', serif;
-        font-weight: 400;
-        padding: 5px 20px;
-        border-bottom: solid #d3466c;
+        box-shadow: 0px 0px 15px black;
     }
     
-    #navbar2 a.active {
-        font-weight: 700;
-        border-bottom: solid #a52748;
+    #navbarDesk a {
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 400;
+        padding: 5px 30px;
+    }
+    
+    #navbarDesk a:hover {
+        background-color: white;
+        text-shadow: 1px 1px 5px #71abb3;
+    }
+    
+    #navbarDesk a.active {
+        background-color: white;
+        border-bottom: solid #71abb3;
+        text-shadow: 1px 1px 5px #71abb3;
     }
     
     #navbar2 a:hover, #navbar2 a.active {
