@@ -293,39 +293,9 @@ main a {
         text-shadow: 1px 1px 5px #71abb3;
     }
     
-    #navbar2 a:hover, #navbar2 a.active {
-        color: #a52748;
-
-    }
-    
-    #navbar2 a:hover{
-        border-bottom: solid white;
-    }
-    
-    
-    
-    #frontTitle2 {
-        display: block;
-        margin-right: 50px;
-    }
-    
-    #frontTitle {
-        display: none;
-    }
-    #board {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .boardCol {
-        flex: 1 0 30%;
-    }
-    
-    #imageback {
-    }
-    
     /* RESIZE ALL FONTS FOR DESKTOP*/
     
+/*
     h2 {
         font-size: 35px;
     }
@@ -349,4 +319,5 @@ main a {
     #navbar2 a {
         font-size: 25px;
     }
+*/
 }
