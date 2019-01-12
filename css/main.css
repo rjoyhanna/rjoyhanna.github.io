@@ -202,6 +202,11 @@ i {
     color: #71abb3;
 }
 
+iframe {
+    margin: 25px;
+    align-content: center;
+}
+
 b {
     text-decoration: underline;
 }
@@ -307,7 +312,7 @@ i:hover {
     display: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     header {
         top: 0px;
         display: flex;
@@ -330,7 +335,7 @@ i:hover {
         text-decoration: none;
         text-align: center;
         font-weight: 400;
-        padding: 5px 30px;
+        padding: 5px 20px;
     }
     
     #navbarDesk a:hover {
@@ -381,7 +386,7 @@ i:hover {
 */
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     #stretch {
         max-width: 60%;
     }
