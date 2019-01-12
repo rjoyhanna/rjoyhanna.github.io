@@ -27,7 +27,7 @@ body {
     margin: 0px;
 }
 
-h1, p, a {
+h1, p, a, ul {
 /*    font-family: 'Noto Serif KR', sans-serif;*/
     font-size: 25px;
 /*
@@ -95,6 +95,12 @@ footer {
     color: #1d2a33;
 }
 
+ul {
+  list-style-type: square;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
 .projBlock, .projBlockCol {
     background-color: rgb(255, 255, 255, 90%);
     display: flex;
@@ -126,10 +132,30 @@ footer {
     box-shadow: 0px 0px 15px black;
 }
 
-#stretch {
+#stretch, .stretch {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+}
+
+#websites {
+    display: flex;
+    flex-direction: column;
+}
+
+#index {
+    min-width: 100%;
+}
+
+.avatar {
+    width:128px;
+    height: 128px;
+    margin: 5px;
+    margin-top: 40px;
+    border: 5px solid #71abb3;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
 }
 
 .webBlock:hover {
@@ -140,6 +166,14 @@ footer {
 .webinfo h2, .webinfo p{
     font-size: 15px;
     margin: 0px;
+}
+
+#index h2 {
+    font-size: 25px;
+}
+
+#index p, #index ul, #index a {
+    font-size: 16px;
 }
 
 .webimg {
@@ -153,10 +187,27 @@ main a {
 }
 
 #contactBox {
-    width: 100%;
+    max-width: 100%;
+    margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+i {
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-top: 0px;
+    color: #71abb3;
+}
+
+b {
+    text-decoration: underline;
+}
+
+i:hover {
+    color: white;
 }
 
 #contactBoxHover {
@@ -293,6 +344,14 @@ main a {
         text-shadow: 1px 1px 5px #71abb3;
     }
     
+    #websites {
+        flex-direction: row;
+    }
+    
+    #stretch {
+        max-width: 80%;
+    }
+    
     /* RESIZE ALL FONTS FOR DESKTOP*/
     
 /*
@@ -320,4 +379,10 @@ main a {
         font-size: 25px;
     }
 */
+}
+
+@media screen and (min-width: 600px) {
+    #stretch {
+        max-width: 60%;
+    }
 }

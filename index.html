@@ -7,6 +7,13 @@
     <meta name="description" content="A portfolio website showcases Rachel Hanna's skills and experience">
     <meta name="author" content="RACHEL HANNA">
     <meta name="theme-color" content="#71abb3">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
     <link rel="stylesheet" type="text/css" href="CSS/reset.css">
     <link rel="stylesheet" type="text/css" href="CSS/main.css">
     <link rel="shortcut icon" type="image/png" href="Images/Icons/favicon.png"/>
@@ -39,8 +46,94 @@
     
     </header>
     
-    <main>
-        <h1 id="Title">Rachel Hanna</h1>
+    <main id="index">
+        <img src="Images/profile.jpg" class="img-responsive img-circle avatar" alt="Rachel Hanna Image">
+        <h1>Rachel Hanna</h1>
+        
+                <div id="websites">
+
+        <div id="stretch">
+            
+            <div class="webBlock"><div class="webinfo"><h2>About Me</h2><br>
+                
+                <p>I am a 3rd year at UC Davis pursuing a B.S. in Computer Science. My areas of interest include Software Engineering, Computer Security, and Web Development. Some of my recent projects include:</p> 
+                <ul>
+                    <li>building a website for my <a href="http://rjoypetportraits.com/">pet portrait business</a></li>
+                    <li>working as a <a href="https://uecomm.ucdavis.edu/people/rachel-hanna">Student Web Developer for UC Davis</a></li>
+                    <li>studying <a href="https://rjoyhanna.github.io/Documents/Honors_Project_Paper.pdf">network visualization</a> with Professor Patrice Koehl.</li>
+                </ul>
+                <p><br>
+                    I am a member of the University Honors Program and the Dean's Honors List. I am the Web Director for the UC Davis Women in Computer Science (WiCS) Club. I love music, and was involved in the University Chorus. To combine my interest in animals and art, I built and have maintained a website to bring custom pet portraits to Davis.
+                </p>
+                
+                </div></div>
+            
+            <div class="webBlock"><div class="webinfo"><h2>Skills</h2><br>
+                
+                <ul>
+                    <li>Java</li>
+                    <li>C/C++</li>
+                    <li>Python</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript/D3</li>
+                    <li>Rust</li>
+                    <li>Programming in a Linux environment</li>
+                    <li>Node.js</li>
+                    <li>Haskell</li>
+                    <li>Prolog</li>
+                    <li>Google Analytics, Scripts, Sheets, Forms, and Drive</li>
+                    <li>Knowledge of computer architecture, digital circuitry, and assembly languages</li>
+                    <li>Experience with graphic design using Photoshop, Autodesk Sketchbook, and Gimp</li>
+                    <li>Experience with video editing using Pinnacle Studio, Movavi, and YouTube</li>
+                </ul>
+                
+                </div></div>
+        </div>
+                    
+        <div id="stretch">
+            <div class="webBlock"><div class="webinfo"><h2>References</h2><br>
+                
+                <ul>
+                    <li><b>Sharon Knox</b><br>Director of Communications, UC Davis Office of Undergraduate Education<br><a href="mailto:scknox@gmail.com">scknox@ucdavis.edu</a><br><br></li>
+                    <li><b>Patrice Koehl</b><br>UC Davis Professor<br><a href="mailto:pakoehl@gmail.com">pakoehl@ucdavis.edu</a><br><br></li>
+                    <li><b>Kurt Eiselt</b><br>UC Davis Lecturer<br><a href="mailto:eiselt@ucdavis.edu">eiselt@ucdavis.edu</a><br></li>
+                </ul>
+                
+                </div></div>
+            
+            <div class="webBlock"><div class="webinfo"><h2>Work Experience</h2><br>
+                <p><b>Student Web Developer</b></p>
+                <ul>
+                    <li>UC Davis Undergraduate Education</li>
+                    <li>Built and maintained about 15 campus sites using the SiteFarm CMS (Drupal-based)</li>
+                    <li>Developed skills using Google Analytics, Google Script, Draw.io, and Photoshop</li>
+                </ul>
+                
+                <p><br><b>WiCS Web Director</b></p>
+                <ul>
+                    <li>UC Davis Women in Computer Science</li>
+                    <li>Built and maintained the club website, hosted with GitHub</li>
+                    <li>Cooperated with other board members using applications like Slack and Google Drive</li>
+                </ul>
+                
+                <p><br><b>Network Visualization Project with Professor Patrice Koehl</b></p>
+                <ul>
+                    <li>University of California Davis</li>
+                    <li>Learned to use the Apache web server on a Windows machine</li>
+                    <li>Studied the use of HTML, CSS, and the JavaScript D3 library to model protein folding</li>
+                </ul>
+                
+                <p><br><b>Web Designer and Developer for RJoy Pet Portraits</b></p>
+                <ul>
+                    <li>Designed, developed, and published a live website using a Linux web host</li>
+                    <li>Completed a variety of commissioned drawings and paintings</li>
+                </ul>
+
+                
+                </div></div>
+        </div>
+                    
+        </div>
     
     </main>
     
@@ -48,11 +141,10 @@
         
         <div id="contactBox">
             
-            <div class="iconsBox2" id="Email"><a href="mailto:rjhanna@ucdavis.edu"><img  class="noHoverIcons" src="Images/Icons/email.png"></a></div>
-                
-            <div class="iconsBox2" id="Phone"><a href="tel:15306161088"><img  class="noHoverIcons" src="Images/Icons/call.png"></a></div>
-
-            <div class="iconsBox2" id="LinkedIn"><a href="https://www.linkedin.com/in/rachel-joy-hanna/"><img  class="noHoverIcons" src="Images/Icons/linkedin.png"></a></div>
+            <a href="mailto:rjoyhanna@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a>
+        <a href="https://github.com/rjoyhanna"><i class="fab fa-github-square fa-2x"></i></a>
+            <a href="tel:15306161088"><i class="fas fa-phone-square fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/rachel-joy-hanna/"><i class="fab fa-linkedin fa-2x"></i></a>
             
         </div>
     
